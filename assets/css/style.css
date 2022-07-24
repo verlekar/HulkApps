@@ -1,0 +1,107 @@
+
+ 
+ /* Font family start */
+  
+@font-face {
+    font-family: 'karlaregular';
+    src: url('../fonts/Karla-VariableFont_wght.ttf');
+    
+    font-weight: normal;
+    font-style: normal;
+
+}
+ 
+* {
+  box-sizing: border-box;
+} 
+ 
+
+body {
+    font-family: 'karlaregular'!important;
+   
+}
+
+h1{
+    font-size: 30px!important;
+}
+
+p {
+    color: #7D7D7D!important;
+    font-size: 16px !important;
+}
+
+
+.text-center {
+	text-align:center;
+}
+
+.btn-default {
+    color: #1E1E1E!important;
+    background-color: #fff!important;
+    border-color: #1E1E1E!important;
+    font-weight: bold!important;
+    border-radius: 2px!important;
+    padding: 10px 26px!important;
+    letter-spacing: 1px!important;
+    margin-top: 10px;
+}
+
+.logo{
+    padding: 20px;
+}
+
+
+.d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.align-self-middle {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.sparkle {
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-three {
+    overflow: hidden;
+}
+
+.sparkle h1,p {
+    text-align: left;
+}
+
+.sparkle:before {
+    content: "";
+    position: absolute;
+    background-color: #D9F5F4;
+    left: -212px;
+    z-index: -1;
+    top: -50px;
+    bottom: -51px;
+    right: -200px;
+  }
+
+.fa {
+    color: #7D7D7D;
+}
+
+.fa-angle-right {
+    padding-left: 5px;
+    position: relative;
+    top: 0px;
+}
