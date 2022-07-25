@@ -6,74 +6,278 @@
   <meta name="description" content="HULK/apps">
   <title>HULK/apps></title>
   <link rel="stylesheet" href="./assets/css/style.css">
-   <link rel="stylesheet" href="./assets/fonts/style.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./asssets/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 </head>
 
 <body>
 
-<section class="section-one">
-<div class="container-fluid">
-<div class="row"> 
-<div class="logo text-center">
-<p><img src="./assets/images/logo.png" alt="hulkapps"/></p>
-</div>
-</div>
-</div>
+
+<section class="main">
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="glyphicon glyphicon-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h1>YOUR BAG (2 ITEM)</h1>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                        <li><a href="#">Home 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar">
+                <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="nav-btn ">
+                            <!-- <i class="fa fa-shopping-bag-o" aria-hidden="true"></i>  -->
+                            <img src="./assets/images/shopping-bag.png" alt="hulkapps"/>
+                            <span class="cart-text">2</span>
+                        </button>
+                    </div>
+            </nav>
+
+            <section class="section-one">
+                <div class="container">
+                <div class="row"> 
+                <div class="logo text-center">
+                <p><img src="./assets/images/logo.png" alt="hulkapps"/></p>
+                <h1 class="h1-web">Featured Collection</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam<br/> pulvinar ac tortor imperdiet commodo.</p>
+                </div>
+                </div>
+                </div>
+                </section>
+                
+                
+                <section class="section-two">
+                <div class="container">
+                <div class="row"> 
+                
+                <div class="col-sm-3 one">
+                <div class="sec-two-block">
+                
+                <div class="img-block">
+                <p><img  src="./assets/images/5.png" alt="hulkapps"/></p>
+                </div>
+                
+                
+                <div class="product-title">
+                    <p>Small Noami<span class="price">$74.99</span></p>
+                </div>
+                           
+                <div class="color-change-btn">
+                    <p>
+                    <span><i class="fa fa-dot-circle-o fa_custom "></i></span>
+                        <span><i class="fa fa-fw fa-circle fa_custom1 "></i></span>
+                            <span><i class="fa fa-fw fa-circle fa_custom2 "></i></span>
+                                <span><i class="fa fa-fw fa-circle fa_custom3 "></i></span>
+                                    <span><i class="fa fa-fw fa-circle fa_custom4 "></i></span>
+                    
+                    </p>
+                    
+                    <p>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">XS</button></span>
+                    <span><button type="button" class="size-btn active btn btn-outline-primary">S</button></span>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">M</button></span>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">L</button></span>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">XL</button></span>
+                    </p>
+                    
+                </div>
+                
+                <div class="sec-cart">
+                <p>
+                <button type="button" class="cart-btn size-btn btn btn-outline-primary">ADD TO CART</button>
+                </p>
+                </div>
+                
+                </div>
+                </div>
+                
+                <div class="col-sm-3 two">
+                <div class="sec-two-block">
+                <div class="img-block">
+                <p><img src="./assets/images/6.png" alt="hulkapps"/></p>
+                </div>
+                <div class="product-title">
+                    <p>Stormy<span class="price">$56.99</span></p>
+                </div>
+                <div class="color-change-btn">
+                    <p>
+                    <span><i class="fa fa-fw fa-circle fa_custom "></i></span>
+                        <span><i class="fa fa-fw fa-circle-o fa_custom1 "></i></span>
+                            <span><i class="fa fa-fw fa-circle fa_custom2 "></i></span>
+                            
+                    
+                    </p>
+                </div>
+                
+                <div class="sec-cart">
+                <p>
+                <button type="button" class="cart-btn size-btn btn btn-outline-primary">ADD TO CART</button>
+                </p>
+                </div>
+                
+                </div>
+                </div>
+                
+                <div class="col-sm-3 three">
+                <div class="sec-three-block">
+                <div class="img-block">
+                <p><img src="./assets/images/7.png" alt="hulkapps"/></p>
+                </div>
+                <div class="product-title">
+                    <p>Puff Larger<span class="price">$43.99</span></p>
+                    
+                </div>
+                
+                <div class="color-change-btn">
+                <p>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">XS</button></span>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">S</button></span>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">M</button></span>
+                    <span><button type="button" class="size-btn active btn btn-outline-primary">L</button></span>
+                    <span><button type="button" class="size-btn btn btn-outline-primary">XL</button></span>
+                    </p>
+                    
+                </div>
+                
+                <div class="sec-cart">
+                <p>
+                <button type="button" class="cart-btn size-btn btn btn-outline-primary">ADD TO CART</button>
+                </p>
+                </div>
+                
+                </div>
+                </div>
+                
+                <div class="col-sm-3 four">
+                <div class="sec-four-block">
+                <div class="img-block">
+                <p>
+                    <img class="white-tshirt active" src="./assets/images/8.png" alt="hulkapps"/>
+                    <img class="blue-tshirt" src="./assets/images/9.png" alt="hulkapps"/>
+                </p>
+                
+                </div>
+                <div class="product-title">
+                    <p>Helix<span class="price">$78.99</span></p>
+                </div>
+                
+                <div class="color-change-btn">
+                <p>
+                <span><i data="white-tshirt" class="fa fa-fw fa-circle-o fa_custom1  active"></i></span>
+                <span><i data="blue-tshirt" class="fa fa-fw fa-circle fa_custom5 "></i></span>
+                </p>
+                </div>
+                
+                <div class="sec-cart">
+                <p>
+                <button type="button" class="cart-btn size-btn btn btn-outline-primary">ADD TO CART</button>
+                </p>
+                </div>
+                
+                </div>
+                </div>
+                
+                </div>
+                </div>
+                </section>
+                
+                
+                <section class="section-three">
+                <div class="container">
+                <div class="row d-flex"> 
+                
+                <div class="col-sm-8 col-xs-12 align-self-middle one">
+                
+                <div class="row d-flex"> 
+                
+                <div class="col-sm-7 col-xs-12 align-self-middle sub1-one">
+                <h1>Made For You</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit. Aliquam pulvinar ac tortor imperdiet commodo.</p>
+                 <button type="button" class="btn btn-default">Learn More</button>
+                </div>
+                
+                <div class="col-sm-5 col-xs-12 align-self-middle sub2-two">
+                <p><img src="./assets/images/2.png" alt="hulkapps"/></p>
+                </div>
+                
+                </div>
+                
+                <div class="row d-flex"> 
+                <div class="col-sm-6 col-xs-12 align-self-middle sub2-one">
+                <p><img src="./assets/images/3.png" alt="hulkapps"/></p>
+                </div>
+                <div class="col-sm-6 col-xs-12 align-self-middle sub2-two">
+                <p><img src="./assets/images/4.jpg" alt="hulkapps"/></p>
+                </div>
+                </div>
+                
+                </div>
+                
+                
+                <div class="col-sm-4 col-xs-12 align-self-middle two">
+                <div class="sparkle">
+                <p><img src="./assets/images/1.png" alt="hulkapps"/></p>
+                <h1 class="h1-web">FIND YOUR SPARKLE.</h1>
+                <p class="sparkle-subtext">SHOP OUR PRODUCTS <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                </div>
+                </div>
+                
+                
+                </div>
+                </div>
+                </section>
+
+
+           
+        </div>
+    </div>
+  <div class="overlay"></div>
 </section>
 
 
-<section class="section-three">
 
-
-<div class="container">
-<div class="row d-flex"> 
-
-<div class="col-sm-8 align-self-middle one">
-
-<div class="row d-flex"> 
-
-<div class="col-sm-7 align-self-middle sub1-one">
-<h1>Made For You</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit. Aliquam pulvinar ac tortor imperdiet commodo.</p>
- <button type="button" class="btn btn-default">Learn More</button>
-</div>
-
-<div class="col-sm-5 align-self-middle sub2-two">
-<p><img src="./assets/images/2.png" alt="hulkapps"/></p>
-</div>
-
-</div>
-
-<div class="row d-flex"> 
-<div class="col-sm-6 align-self-middle sub2-one">
-<p><img src="./assets/images/3.png" alt="hulkapps"/></p>
-</div>
-<div class="col-sm-6 align-self-middle sub2-two">
-<p><img src="./assets/images/4.jpg" alt="hulkapps"/></p>
-</div>
-</div>
-
-</div>
-
-
-<div class="col-sm-4 align-self-middle two">
-<div class="sparkle">
-<p><img src="./assets/images/1.png" alt="hulkapps"/></p>
-<h1>FIND YOUR SPARKLE.</h1>
-<p>SHOP OUR PRODUCTS 
-  <i class="fa fa-angle-right" aria-hidden="true"></i>
-</p>
-</div>
-</div>
-
-
-</div>
-</div>
-</section>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 
 </body>
