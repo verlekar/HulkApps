@@ -103,17 +103,25 @@ img {
     top: 0px;
 }
 
-.section-two .product-title {
+.section-two .product-title,
+footer .product-title
+{
     padding: 10px 0px 0 0;
 }
 
-.section-two .product-title p {
+
+
+.section-two .product-title p,
+footer .product-title p,
+.my-cart .product-title p {
     font-size: 16px;
     color: #1E1E1E;
     font-weight: 600;
 }
 
-.section-two .price{
+.section-two .price,
+footer .price
+{
 	float: right;
 	font-weight: 500;
 }
@@ -167,7 +175,9 @@ color: #3014F9;
     border-radius: 0px;
 }
 
-.section-two .size-btn.active {
+.section-two .size-btn.active,
+footer .size-btn.active
+{
     background: #1E1E1E;
     color: #fff;
 }
@@ -177,6 +187,26 @@ color: #3014F9;
     padding: 10px;
 }
 
+footer .check-lock {
+    padding-right: 5px;
+}
+
+.my-cart .product-title p:first-child {
+    text-transform: uppercase;;
+}
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+.my-cart #dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    top: -6px;
+    right: 22px;
+}
+
 
 /* Sidebar CSS */
 
@@ -184,10 +214,10 @@ color: #3014F9;
     SIDEBAR STYLE
 ----------------------------------------------------- */
 #sidebar {
-    width: 300px;
+    width: 400px;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 100%;
     height: 100vh;
     z-index: 999;
     background: #fff;
@@ -195,6 +225,7 @@ color: #3014F9;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: width 2s;
 }
 
 #sidebar.active {
@@ -206,7 +237,6 @@ color: #3014F9;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -397,6 +427,108 @@ a.article, a.article:hover {
     opacity: 1;
 }
 
+footer {
+    color: #221F20;
+    background: #EFF5F7;
+    padding: 20px 20px;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid #221F20;
+    /* width: 100%; */
+    top: auto;
+    position: relative;
+}
+
+.color-white{
+    color:#fff;
+}
+
+.font-20{
+    font-size:20px;
+}
+
+.cart-1 {
+    padding: 20px 10px;
+    border-bottom: 1px solid #F6F6F6;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.my-cart .price {
+    position: absolute;
+    bottom: 20px;
+}
+
+.mt-0{
+    margin-top: 0;
+}
+
+.my-cart {
+    overflow: auto;
+    min-height: 400px;
+}
+
+
+
+/* Increment Decrement CSS */
+
+  
+  /* ------------------------------ COUNTER BEGIN ------------------------------ */
+  .counter__increment, .counter__decrement {
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .counter {
+    position: relative;
+    width: 6.5rem;
+    height: 1.875rem;
+    border: 1px solid #F6F6F6;
+    text-align: center;
+    overflow: hidden;
+    background: #F6F6F6;
+    border-radius: 20px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+  .counter__input {
+    border: none;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #2f3640;
+    font-size: 13px;
+    background-color: transparent;
+    line-height: 49px;
+}
+  .counter__increment, .counter__decrement {
+    position: absolute;
+    top: 0;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    height: 1.875rem;
+    width: 2.1875rem;
+    font-weight: normal;
+    color: #2f3640;
+    text-decoration: none;
+  }
+  .counter__increment:hover, .counter__increment:active, .counter__increment:focus, .counter__decrement:hover, .counter__decrement:active, .counter__decrement:focus {
+    color: #2f3640;
+    text-decoration: none;
+    background-color: #edeff0;
+  }
+  .counter__increment {
+    right: 0;
+    border-left: 1px solid #F6F6F6;
+  }
+  .counter__decrement {
+    left: 0;
+    top: 0;
+    border-right: 1px solid #F6F6F6;
+    line-height: 1.6875rem;
+  }
+  
+/* Increment Decrement CSS */
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
  .section-two .product-title {
@@ -445,6 +577,35 @@ a.article, a.article:hover {
 
 .section-three .one .sub1-one {
     padding-bottom: 30px;
+}
+
+.my-cart .price {
+    position: relative;
+    bottom: 0px;
+}
+
+.my-cart #dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    right: 22px;
+    position: absolute;
+    top: -334%;
+}
+
+.counter {
+    position: relative;
+    width: 6.5rem;
+    text-align: center;
+    background: #F6F6F6;
+    border-radius: 20px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.my-cart {
+    text-align: center;
 }
 
 } 
